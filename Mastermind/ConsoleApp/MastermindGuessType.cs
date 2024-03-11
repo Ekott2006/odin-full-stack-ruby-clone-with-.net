@@ -1,0 +1,4 @@
+enum MastermindGuessType
+{
+    CorrectLocation, WrongLocation
+}
