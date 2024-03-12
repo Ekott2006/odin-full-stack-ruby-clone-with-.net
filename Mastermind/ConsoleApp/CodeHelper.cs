@@ -3,12 +3,8 @@ internal class CodeHelper
 
     public static IGuess GuessGenerator(string optionInput)
     {
-        // return 
-        // TODO: Change Implementation
-        if (int.TryParse(optionInput, out int option))
-            option = option == 1 ? 1 : 2;
-        else option = 2;
-
+        if (!int.TryParse(optionInput, out int option))
+            option = 2;
         return option == 1 ? new CodeMaker() : new CodeBreaker();
     }
 

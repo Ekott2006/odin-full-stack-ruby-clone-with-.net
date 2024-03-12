@@ -60,7 +60,7 @@ while (true)
   Dictionary<MastermindGuessType, int>? result = [];
   for (int i = 0; i < maxGuesses; i++)
   {
-        List<Color> aGuess = guess.GetGuess();
+    List<Color> aGuess = guess.GetGuess();
     result = guess.HandleGuess(aGuess);
 
     TextHelpers.PrintCodeToColor(aGuess, result);
