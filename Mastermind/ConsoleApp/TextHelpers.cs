@@ -4,6 +4,8 @@ using System.Text.RegularExpressions;
 
 partial class TextHelpers
 {
+    public static readonly string BlackCircle = "\u25CB";
+    public static readonly string BlackDot = "\u25CF";
     public static string ColorizeText(string text, int textColor, int backgroundColor, bool bold = false, bool underline = false)
     {
 
@@ -31,11 +33,11 @@ partial class TextHelpers
         if (addClues) Console.Write("Clues: ");
         for (int i = 0; i < clues[0]; i++)
         {
-            Console.WriteLine(" ● ");
+            Console.Write($" {BlackDot} ");
         }
         for (int i = 0; i < clues[1]; i++)
         {
-            Console.WriteLine(" ○ ");
+            Console.Write($" {BlackCircle} ");
         }
     }
     public static string TextHeading(string text)

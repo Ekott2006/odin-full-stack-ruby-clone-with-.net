@@ -18,6 +18,14 @@ cd odin-full-stack-ruby-clone-with-.net/Mastermind
 
 ## Usage
 
+On Windows, Type this in your terminal to set unicode
+
+```bash
+chcp 65001
+```
+
+Run with this command
+
 ```bash
 dotnet run
 ```

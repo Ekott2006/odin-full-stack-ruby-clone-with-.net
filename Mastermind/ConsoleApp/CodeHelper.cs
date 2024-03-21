@@ -1,11 +1,10 @@
 internal class CodeHelper
 {
-
     public static IGuess GuessGenerator(string optionInput)
     {
         if (!int.TryParse(optionInput, out int option))
             option = 2;
-        return option == 1 ? new CodeMaker() : new CodeBreaker();
+        return option == 2 ? new CodeMaker() : new CodeBreaker();
     }
 
     public static Dictionary<MastermindGuessType, int> EvaluateMastermindGuess(List<Color> guessList, List<Color> secretArray)

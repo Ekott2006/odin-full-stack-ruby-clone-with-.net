@@ -1,13 +1,12 @@
 ﻿// ! Introduction
 Console.WriteLine(TextHelpers.TextHeading("MASTERMIND GAME"));
-System.Console.WriteLine("●●●●●●😢 \u4323");
 Console.WriteLine(TextHelpers.TextHeading("About"));
 Console.WriteLine("This is a 1-player game against the computer.You can choose to be the code maker or the code breaker.");
 
 Console.WriteLine(TextHelpers.TextHeading("Instruction"));
 Console.WriteLine("The code maker makes a secret color combination, and the code breaker tries to guess it.");
 Console.WriteLine("After each guess, the code maker gives feedback about the correct colors and positions. ");
-Console.WriteLine("The game goes on until the code breaker figures out the whole combination, using up to four clues marked with a check (●) for correct number and position and a circle (○) for correct number but wrong position.");
+Console.WriteLine($"The game goes on until the code breaker figures out the whole combination, using up to four clues marked with a check ({TextHelpers.BlackDot}) for correct number and position and a circle ({TextHelpers.BlackCircle}) for correct number but wrong position.");
 
 Console.WriteLine(TextHelpers.TextHeading("Examples:"));
 
